@@ -1,14 +1,26 @@
 //
 //  CustomActivity.swift
-//  ShareExtensionDemo
+//  CustomUIActivity
 //
-//  Created by youjie on 2023/3/15.
+//  Created by youjie on 2023/3/16.
 //
 
 import UIKit
 
-class WeChatActivity: UIActivity {
-
+class CustomShareActivity: UIActivity {
+    
+    var type: UIActivity.ActivityType?
+    var title: String?
+    var image: UIImage?
+    
+    init(type: UIActivity.ActivityType?,
+         title: String?,
+         image: UIImage?) {
+        self.type = type
+        self.title = title
+        self.image = image
+    }
+    
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
         return true
     }
@@ -20,15 +32,15 @@ class WeChatActivity: UIActivity {
     }
     
     override var activityType: UIActivity.ActivityType? {
-        return UIActivity.ActivityType("com.example.wechat")
+        return self.type
     }
     
     override var activityTitle: String? {
-        return "微信"
+        return self.title
     }
     
     override var activityImage: UIImage? {
-        return UIImage(named: "share_action_wechat")
+        return self.image
     }
     
     override func perform() {

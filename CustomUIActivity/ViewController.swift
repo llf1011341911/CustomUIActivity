@@ -17,14 +17,15 @@ class ViewController: UIViewController {
     /// 使用自定义的UIActivity
     @IBAction func shareAction(_ sender: Any) {
         /// share
-        let email = EmailActivity()
-        let message = MessageActivity()
-        let wechat = WeChatActivity()
-        let whatsapp = WhatsAppActivity()
-        
+        let email = CustomShareActivity(type: UIActivity.ActivityType("com.example.email"), title: "邮件", image: UIImage(named: "share_action_email"))
+        let message = CustomShareActivity(type: UIActivity.ActivityType("com.example.message"), title: "信息", image: UIImage(named: "share_action_messenger"))
+        let wechat = CustomShareActivity(type: UIActivity.ActivityType("com.example.wechat"), title: "微信", image: UIImage(named: "share_action_wechat"))
+        let whatsapp = CustomShareActivity(type: UIActivity.ActivityType("com.example.whatsapp"), title: "WhatsApp", image: UIImage(named: "share_action_whatsApp"))
+
         /// action
-        let print = PrintActionActivity()
-        let save = SaveActionActivity()
+        
+        let print = CustomActionActivity(type: UIActivity.ActivityType("com.example.print"), title: "打印", image: UIImage(named: "share_action_print"))
+        let save = CustomActionActivity(type: UIActivity.ActivityType("com.example.save"), title: "保存到文件", image: UIImage(named: "share_action_saveTofile"))
         
         let activity = UIActivityViewController.init(activityItems: [], applicationActivities: [email, message, wechat, whatsapp, print, save])
         activity.completionWithItemsHandler = { (activityType, completed , returnedItems, activityError) in

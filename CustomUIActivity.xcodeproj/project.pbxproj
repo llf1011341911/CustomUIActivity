@@ -13,12 +13,8 @@
 		855A5CAD29C316A4006F083A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A5CAB29C316A4006F083A /* Main.storyboard */; };
 		855A5CAF29C316A6006F083A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855A5CAE29C316A6006F083A /* Assets.xcassets */; };
 		855A5CB229C316A6006F083A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855A5CB029C316A6006F083A /* LaunchScreen.storyboard */; };
-		855A5CBF29C316BC006F083A /* PrintActionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CB929C316BA006F083A /* PrintActionActivity.swift */; };
-		855A5CC029C316BC006F083A /* WhatsAppActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CBA29C316BA006F083A /* WhatsAppActivity.swift */; };
-		855A5CC129C316BC006F083A /* WeChatActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CBB29C316BB006F083A /* WeChatActivity.swift */; };
-		855A5CC229C316BC006F083A /* EmailActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CBC29C316BB006F083A /* EmailActivity.swift */; };
-		855A5CC329C316BC006F083A /* MessageActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CBD29C316BB006F083A /* MessageActivity.swift */; };
-		855A5CC429C316BC006F083A /* SaveActionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CBE29C316BB006F083A /* SaveActionActivity.swift */; };
+		855A5CC629C3199C006F083A /* CustomShareActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CC529C3199C006F083A /* CustomShareActivity.swift */; };
+		855A5CC829C31AC4006F083A /* CustomActionActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855A5CC729C31AC4006F083A /* CustomActionActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +26,8 @@
 		855A5CAE29C316A6006F083A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		855A5CB129C316A6006F083A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		855A5CB329C316A6006F083A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		855A5CB929C316BA006F083A /* PrintActionActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintActionActivity.swift; sourceTree = "<group>"; };
-		855A5CBA29C316BA006F083A /* WhatsAppActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsAppActivity.swift; sourceTree = "<group>"; };
-		855A5CBB29C316BB006F083A /* WeChatActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatActivity.swift; sourceTree = "<group>"; };
-		855A5CBC29C316BB006F083A /* EmailActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailActivity.swift; sourceTree = "<group>"; };
-		855A5CBD29C316BB006F083A /* MessageActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageActivity.swift; sourceTree = "<group>"; };
-		855A5CBE29C316BB006F083A /* SaveActionActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveActionActivity.swift; sourceTree = "<group>"; };
+		855A5CC529C3199C006F083A /* CustomShareActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShareActivity.swift; sourceTree = "<group>"; };
+		855A5CC729C31AC4006F083A /* CustomActionActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +63,8 @@
 				855A5CA529C316A4006F083A /* AppDelegate.swift */,
 				855A5CA729C316A4006F083A /* SceneDelegate.swift */,
 				855A5CA929C316A4006F083A /* ViewController.swift */,
-				855A5CBC29C316BB006F083A /* EmailActivity.swift */,
-				855A5CBD29C316BB006F083A /* MessageActivity.swift */,
-				855A5CB929C316BA006F083A /* PrintActionActivity.swift */,
-				855A5CBE29C316BB006F083A /* SaveActionActivity.swift */,
-				855A5CBB29C316BB006F083A /* WeChatActivity.swift */,
-				855A5CBA29C316BA006F083A /* WhatsAppActivity.swift */,
+				855A5CC529C3199C006F083A /* CustomShareActivity.swift */,
+				855A5CC729C31AC4006F083A /* CustomActionActivity.swift */,
 				855A5CAB29C316A4006F083A /* Main.storyboard */,
 				855A5CAE29C316A6006F083A /* Assets.xcassets */,
 				855A5CB029C316A6006F083A /* LaunchScreen.storyboard */,
@@ -156,15 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				855A5CC229C316BC006F083A /* EmailActivity.swift in Sources */,
-				855A5CC129C316BC006F083A /* WeChatActivity.swift in Sources */,
-				855A5CC329C316BC006F083A /* MessageActivity.swift in Sources */,
-				855A5CBF29C316BC006F083A /* PrintActionActivity.swift in Sources */,
+				855A5CC829C31AC4006F083A /* CustomActionActivity.swift in Sources */,
 				855A5CAA29C316A4006F083A /* ViewController.swift in Sources */,
-				855A5CC029C316BC006F083A /* WhatsAppActivity.swift in Sources */,
+				855A5CC629C3199C006F083A /* CustomShareActivity.swift in Sources */,
 				855A5CA629C316A4006F083A /* AppDelegate.swift in Sources */,
 				855A5CA829C316A4006F083A /* SceneDelegate.swift in Sources */,
-				855A5CC429C316BC006F083A /* SaveActionActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

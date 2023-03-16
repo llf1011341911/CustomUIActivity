@@ -1,14 +1,26 @@
 //
-//  PrintActivity.swift
-//  ShareExtensionDemo
+//  CustomActionActivity.swift
+//  CustomUIActivity
 //
-//  Created by youjie on 2023/3/15.
+//  Created by youjie on 2023/3/16.
 //
 
 import UIKit
 
-class PrintActionActivity: UIActivity {
-
+class CustomActionActivity: UIActivity {
+    
+    var type: UIActivity.ActivityType?
+    var title: String?
+    var image: UIImage?
+    
+    init(type: UIActivity.ActivityType?,
+         title: String?,
+         image: UIImage?) {
+        self.type = type
+        self.title = title
+        self.image = image
+    }
+    
     override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
         return true
     }
@@ -20,15 +32,15 @@ class PrintActionActivity: UIActivity {
     }
     
     override var activityType: UIActivity.ActivityType? {
-        return UIActivity.ActivityType("com.example.print")
+        return self.type
     }
     
     override var activityTitle: String? {
-        return "打印"
+        return self.title
     }
     
     override var activityImage: UIImage? {
-        return UIImage(named: "share_action_print")
+        return self.image
     }
     
     override func perform() {
